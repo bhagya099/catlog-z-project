@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,12 +16,6 @@ body {
 
 /* styling nav  */
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .nav_logo {
     color: #3399CC;
     font-size: 1.6rem;
@@ -26,23 +24,11 @@ nav {
     margin-left: 0.4rem;
 }
 
-.nav_links {
-    list-style-type: none;
-    color: #666666;
-    font-size: 1.2rem;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding-right: 0.6rem;
-    padding-left: 0.6rem;
-}
-
 
 /* hover effect on links */
 
 a:hover {
-    color: #341f41;
+    color: #3c39c2;
     padding-bottom: 0.5rem;
 }
 
@@ -60,4 +46,28 @@ a:hover {
 
 .nav_link_4:hover {
     border-bottom: 4px solid #9638b0;
+}
+
+
+/* header */
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/hero.jpg);
+}
+
+input {
+    color: #009999;
+    height: 50px;
+    width: 300px;
+}
+
+button {
+    background-color: #009999;
+    height: 50px;
+    width: 100px;
+    margin-left: -5px;
 }
