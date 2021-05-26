@@ -11,16 +11,34 @@ body {
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    /* giving body full height */
+    height: 100vh;
+    /* making template using grid */
+    display: grid;
+    /* giving rows and size */
+    grid-template-rows: auto auto auto auto;
+    /* giving name of rows */
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
 /* styling nav  */
 
+nav {
+    grid-area: nav;
+}
+
 .nav_logo {
     color: #3399CC;
     font-size: 1.6rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.6rem;
     margin-left: 0.4rem;
 }
 
@@ -53,10 +71,12 @@ a:hover {
 
 header {
     height: 200px;
+    grid-area: header;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/hero.jpg);
+    /* background-image: url('/img/hero.jpg'); */
+    background-color: #9f9fa7;
 }
 
 input {
@@ -65,9 +85,211 @@ input {
     width: 300px;
 }
 
-button {
+header button {
     background-color: #009999;
     height: 50px;
     width: 100px;
     margin-left: -5px;
+}
+
+
+/* main section */
+
+main {
+    grid-area: main;
+    width: 100%;
+}
+
+main .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 12px 0 12px;
+    padding-top: 10px;
+    color: #009999;
+}
+
+.heading input {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+}
+
+
+/* FOR PHOTO SECTION */
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    width: 310px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 12px;
+}
+
+.img-1 {
+    background-image: url('/img/img-01.jpg');
+}
+
+.img-2 {
+    background-image: url('/img/img-02.jpg');
+}
+
+.img-3 {
+    background-image: url('/img/img-03.jpg');
+}
+
+.img-4 {
+    background-image: url('/img/img-04.jpg');
+}
+
+.img-5 {
+    background-image: url('/img/img-05.jpg');
+}
+
+.img-6 {
+    background-image: url('/img/img-06.jpg');
+}
+
+.img-7 {
+    background-image: url('/img/img-07.jpg');
+}
+
+.img-8 {
+    background-image: url('/img/img-08.jpg');
+}
+
+.img-4 {
+    background-image: url('/img/img-04.jpg');
+}
+
+.img-9 {
+    background-image: url('/img/img-09.jpg');
+}
+
+.img-10 {
+    background-image: url('/img/img-10.jpg');
+}
+
+.img-11 {
+    background-image: url('/img/img-11.jpg');
+}
+
+.img-12 {
+    background-image: url('/img/img-12.jpg');
+}
+
+.img-13 {
+    background-image: url('/img/img-13.jpg');
+}
+
+.img-14 {
+    background-image: url('/img/img-14.jpg');
+}
+
+.img-15 {
+    background-image: url('/img/img-15.jpg');
+}
+
+.img-16 {
+    background-image: url('/img/img-16.jpg');
+}
+
+
+/* for image text */
+
+.inner {
+    opacity: 0;
+    color: white;
+    border: 1px solid white;
+    padding: 40px;
+    margin: 15px;
+    background-color: rgba(75, 77, 76, 0.4);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* showing the text when hover */
+
+.img:hover .inner {
+    opacity: 1;
+}
+
+
+/* image bottomw text */
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(171, 169, 169);
+}
+
+
+/* for page number and details */
+
+.page_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* for previous an dnext button */
+
+.page_details .button {
+    background-color: #009999;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 50px 14px;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color: white;
+}
+
+
+/* when hover the previous next button */
+
+.page_details .button:hover {
+    background-color: #317171;
+}
+
+
+/* for 1 2 ... button */
+
+.page_link {
+    width: 60px;
+    height: 60px;
+    font-size: 1.1rem;
+    color: #999;
+    background-color: #EEEEEE;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(36, 34, 34);
+}
+
+
+/* when hover */
+
+.page_link:hover {
+    background-color: #009999;
+}
+
+
+/* for footer */
+
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-around;
 }
