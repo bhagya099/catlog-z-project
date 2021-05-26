@@ -45,7 +45,7 @@ nav {
 
 /* hover effect on links */
 
-a:hover {
+nav a:hover {
     color: #3c39c2;
     padding-bottom: 0.5rem;
 }
@@ -75,7 +75,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url('/img/hero.jpg'); */
+    background-image: url('/img/hero.jpg');
     background-color: #9f9fa7;
 }
 
@@ -83,10 +83,12 @@ input {
     color: #009999;
     height: 50px;
     width: 300px;
+    border: 0;
 }
 
 header button {
-    background-color: #009999;
+    background-color: #5ac2c2;
+    border: 0;
     height: 50px;
     width: 100px;
     margin-left: -5px;
@@ -289,7 +291,99 @@ main .heading {
 
 footer {
     grid-area: footer;
-    display: flex;
     background-color: lightgray;
+    font-size: 0.90rem;
+    padding-top: 30px;
+}
+
+footer h3 {
+    color: #009999;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+footer p {
+    line-height: 1.3rem;
+    color: gray;
+}
+
+footer a {
+    color: gray;
+}
+
+footer a:hover {
+    color: #009999;
+}
+
+
+/* for footer info section */
+
+.footer_info {
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+
+/* footer text */
+
+.footer_text {
+    width: 22%;
+}
+
+.footer_text a {
+    color: blue;
+}
+
+
+/* footer link */
+
+.footer_link {
+    font-size: 0.78rem;
+    width: 22%;
+}
+
+
+/* footer social icon */
+
+.social {
+    width: 22%;
+    text-align: end;
+    font-size: small;
+}
+
+.social a {
+    display: block;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social li a {
+    color: #999999;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.social li a:hover {
+    background-color: #009999;
+    color: white;
+}
+
+
+/* footer bottom text */
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
 }
