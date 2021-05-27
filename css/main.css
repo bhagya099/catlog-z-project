@@ -50,19 +50,23 @@ nav a:hover {
     padding-bottom: 0.5rem;
 }
 
-.nav_link_1:hover {
+.nav_link_1:hover,
+.active {
     border-bottom: 4px solid #33CCFF;
 }
 
-.nav_link_2:hover {
+.nav_link_2:hover,
+.active {
     border-bottom: 4px solid #dc593ccb;
 }
 
-.nav_link_3:hover {
+.nav_link_3:hover,
+.active {
     border-bottom: 4px solid #3abd54af;
 }
 
-.nav_link_4:hover {
+.nav_link_4:hover,
+.active {
     border-bottom: 4px solid #9638b0;
 }
 
@@ -149,7 +153,7 @@ main .heading {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 12px;
-    flex: 1 0 0;
+    flex-grow: 1;
 }
 
 .img-1 {
