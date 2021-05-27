@@ -1,6 +1,71 @@
-/* for contact page */
+h3 {
+    color: #009999;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: space-around;
+}
 
 .contact {
-    display: flex;
-    justify-content: space-between;
+    width: 33%
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #009999;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 50px 14px;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color: white;
+}
+
+button:hover {
+    background-color: #178888;
+}
+
+
+/* address */
+
+.address {
+    width: 33.3%;
+    color: gray;
+    /* margin: auto; */
+}
+
+.address p {
+    margin-top: 23px;
+    margin-bottom: 50px;
+    line-height: 1.3rem;
+}
+
+.address address {
+    margin-bottom: 50px;
+}
+
+.address ul li {
+    margin-bottom: 30px;
+}
+
+a:link {
+    color: gray;
+}
+
+a:hover {
+    color: #009999;
 }

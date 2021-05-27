@@ -55,28 +55,60 @@
     <!-- main -->
 
     <main>
-        <div class="contact">
-            <div class="contact">
-                <h3>Contact</h3>
-                <form action="" class="form">
+        <section class="contact_section">
+            <div class="contact_info">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <form action="action.php" class="contact_form">
+                        <input type="text" id="fname" name="firstname" placeholder="Name" class="form_info" required>
 
-                    <input type="text" placeholder="Name" class="form_input">
-                    <input type="text" placeholder="Email" class="form_input">
-
-
-                </form>
+                        <input type="email" id="lname" name="lastname" placeholder="Email" class="form_info" required>
+                        <select id="country" name="Subject" class="form_info">
+                            <option value="subject" selected>Subject</option>
+                            <option value="sales & marketing">Sales & Marketing</option>
+                            <option value="creative design">Creative Design</option>
+                            <option value="ui/ux">UI / UX</option>
+                        </select>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" class="form_info"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+                <div class="address">
+                    <h3>Our Address</h3>
+                    <p>Quisque eleifend mi et nisi eleifend pretium. Duis porttitor accumsan arcu id rhoncus. Praesent fermentum venenatis ipsum, eget vestibulum purus. </p>
+                    <p>Nulla ut scelerisque elit, in fermentum ante. Aliquam congue mattis erat, eget iaculis enim posuere nec. Quisque risus turpis, tempus in iaculis.</p>
+                    <address>
+                        120-240 Fusce eleifend varius tempus<br>
+                        Duis consectetur at ligula 10660
+                    </address>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i> Email: info@company.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i> Tel: 010-020-0340
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-globe"></i> URL: www.company.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="location">
+                    <h3>Our Location</h3><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58756.987128414774!2d-43.3853!3d-23.012325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sus!4v1622094899660!5m2!1sen!2sus"
+                        width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="address">
-                <h3>Our Address</h3>
-            </div>
-            <div class="location">
-                <h3>Our Location</h3>
-            </div>
-        </div>
 
-        <div class="cards_pics">
+            <div class="cards_pics">
 
-        </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
