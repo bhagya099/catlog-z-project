@@ -114,6 +114,9 @@ main {
     width: 100%;
 }
 
+
+/* for photos and videos page */
+
 main .heading {
     width: 99%;
     display: flex;
@@ -239,7 +242,7 @@ main .heading {
 }
 
 
-/* image bottomw text */
+/* image bottom text */
 
 .text {
     display: flex;

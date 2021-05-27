@@ -1,0 +1,6 @@
+/* for contact page */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
