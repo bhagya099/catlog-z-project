@@ -64,7 +64,7 @@ button:hover {
     margin-bottom: 30px;
 }
 
-.address a:link {
+.address li a {
     color: gray;
 }
 
