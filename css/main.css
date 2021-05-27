@@ -153,7 +153,6 @@ main .heading {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 12px;
-    flex-grow: 1;
 }
 
 .img-1 {

@@ -7,10 +7,11 @@ h3 {
 .contact_info {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contact {
-    width: 33%
+    width: 33%;
 }
 
 input,
