@@ -140,11 +140,12 @@ main .heading {
 }
 
 .img {
-    width: 320px;
+    width: 300px;
     height: 200px;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 12px;
+    flex: 1 0 0;
 }
 
 .img-1 {
@@ -441,6 +442,10 @@ footer a:hover {
         text-align: center;
         display: block;
     }
+    .text {
+        margin-top: 20px;
+        padding: 20px;
+    }
 }
 
 
@@ -456,5 +461,9 @@ footer a:hover {
     }
     .social {
         margin-left: 10px;
+    }
+    .text {
+        margin-top: 40px;
+        padding: 20px;
     }
 }
