@@ -64,11 +64,11 @@ button:hover {
     margin-bottom: 30px;
 }
 
-a:link {
+.address a:link {
     color: gray;
 }
 
-a:hover {
+.address a:hover {
     color: #009999;
 }
 
